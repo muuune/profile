@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://masamune-68.github.io/profile/sitemap.xml
