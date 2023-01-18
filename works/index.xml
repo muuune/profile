@@ -9,14 +9,29 @@
       <link>https://masamune-68.github.io/profile/masamune.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 20 Dec 2022 08:30:00 +0900</lastBuildDate><atom:link href="https://masamune-68.github.io/profile/works/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Jan 2023 08:30:00 +0900</lastBuildDate><atom:link href="https://masamune-68.github.io/profile/works/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS・Androidアプリ「トウケツライフ / 水抜きのし忘れ防止」</title>
+      <link>https://masamune-68.github.io/profile/works/freeze/</link>
+      <pubDate>Wed, 18 Jan 2023 08:30:00 +0900</pubDate>
+      
+      <guid>https://masamune-68.github.io/profile/works/freeze/</guid>
+      <description> アプリの概要 iOS: 現在審査中
+Android: 現在審査中
+Geolocatorで、現在地の緯度・経度を取得。 その後、取得した位置情報を用いてOpenWeatherMap APIから現在地の天気情報を取得。 取得した天気情報から、水道管凍結指数を計算し、アプリ上で表示。 毎晩22時に確認通知を送ることができ、今夜の水抜きが必要か確認することができるため、水抜きのし忘れ防止につながります。 ※ 郵便番号からも検索することができるため、位置情報をオフにしていてもアプリが機能します。
+開発言語・使用したAPI/パッケージ language: Dart / Flutter API: OpenWeatherMap API package geolocator : ^9.0.2 flutter_local_notifications: ^13.0.0 timezone: ^0.9.1 flutter_native_timezone: ^2.0.0 shared_preferences: ^2.0.15 tutorial_coach_mark: ^1.2.4 http: ^0.13.5 flutter_riverpod: ^2.1.3 flutter_launcher_icons: ^0.11.0 flutter_native_splash: ^2.2.16 開発に至った経緯 寒冷地では、寒さによって水道管が凍ってしまうことから、毎晩の水抜きは当たり前のように行われています🚰 しかし、寒冷地に引っ越してきた大学生にとって「水抜き」とは全く未知のこと。 既存の天気アプリでは、水道管凍結指数が表示されているアプリもごく一部存在するが、極めて表示が小さく、そもそも毎晩、凍結指数を確認するようにお知らせをしてくれるアプリはありません！ そこで、現在地の天気情報から水道管凍結指数を計算し、毎晩22時に確認通知をしてくれるアプリケーションを開発してみました！ 開発する上で苦労した点 アプリライフサイクルを理解し、inactive/paused/resumed/detached時においても天気情報や指数の計算を常時処理できるよう、実装したこと。 毎晩22時に確認通知を送るように実装した点。(バックグラウンドでも) チュートリアル画面を初回起動のみ表示するように実装した点。 バックグラウンド時に位置情報を取得できるパッケージと、できないパッケージがあり、苦労した。 位置情報を扱うアプリのため、審査が厳しかった。→ 位置情報をオフにしても機能するアプリに修正し、審査が通りました。 iOSとAndroidでOSが違うため、iOSでは挙動が上手くいっていても、Androidでは上手くいかない時があり、苦労した。 もともと毎晩22時に水道管凍結指数を通知してくれるアプリにしたかったが、バックグラウンドでの定期実行が難しく、まずは定期実行なしのアプリでリリースした。 今後、実装・改善したいこと FirebaseのCloud Functuionsを使って、Firestoreに登録されたユーザーの位置情報を、22時に定期処理して、ユーザーに凍結指数を通知できるようにしたい。 現在、通知時間を22時としているが、ゆくゆくはユーザーの好きな時間に通知できるようにしたい。 最後に 初めてFlutterを使用してアプリをリリースしてみて、思ったことを挙げていきます。
+良かった点
+改めてiOSとAndroid(その他含め)を同時に開発できるのが、凄いなと思いました。時間のない学生や、仕事で忙しい個人開発におすすめしたいです。 Material Design系の標準ライブラリでいい感じのUIがすぐに作れる。 ホットリロードでUI変更が早いため、開発スピードを上げることができる。 悪かった点
+他の言語と比べ、ちょっと複雑なことをしようとすると、英語の資料を読む必要がある。(日本語の資料が少ない) </description>
+    </item>
+    
     <item>
       <title>iOSアプリ「なんでもタワー」</title>
       <link>https://masamune-68.github.io/profile/works/pbl/</link>
       <pubDate>Tue, 20 Dec 2022 08:30:00 +0900</pubDate>
       
       <guid>https://masamune-68.github.io/profile/works/pbl/</guid>
-      <description>アプリの詳細 iOS16の新機能で追加された、写真から被写体を抽出する機能を使って、自分の好きな写真を動物タワーバトル風に遊べるアプリを開発しました。 「どうぶつタワー」は、背景が透過された動物を積み上げていくゲームですが、「なんでもタワー」は、動物だけでなく様々な背景透過画像を使ってゲームを楽しめます。 自分のカメラロールにある、お気に入りの写真や、面白い写真を積み上げて遊んでください。 現在、リリースに向け準備中 開発言語 Unity・Swift
+      <description>アプリの詳細 iOS16の新機能で追加された、写真から被写体を抽出する機能を使って、自分の好きな写真を、動物タワーバトル風に遊べるアプリを開発しました。 「どうぶつタワー」は、背景が透過された動物を積み上げていくゲームですが、「なんでもタワー」は、動物だけでなく様々な背景透過画像を使ってゲームを楽しめます。 自分のカメラロールにある、お気に入りの写真や、面白い写真を積み上げて遊んでください。 現在、リリースに向け準備中です。 開発言語 Unity・Swift → チーム開発
 アプリのイメージ 何か作る時は、田尻さんの写真で遊びがち
 （明日の中間発表これ流したかったな） pic.twitter.com/zrxqrHre3P
 &amp;mdash; マサムネ (@Masamune_68) November 16, 2022 表彰 PBL北海道・東北グループ合同発表会にて「チーム開発賞」をいただきました🏆 </description>

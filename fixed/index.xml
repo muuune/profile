@@ -32,12 +32,14 @@ iOS16の新機能で追加された、写真から被写体を抽出する機能
       
       <guid>https://masamune-68.github.io/profile/fixed/profile/</guid>
       <description>ご覧いただきありがとうございます。 岩手県立大学ソフトウェア情報学研究科(M1)の高橋政宗と申します。
-生年月日 : 1999年6月8日(23歳) / 福島県会津若松市出身 / 岩手県滝沢市在中 / 趣味 : サウナ・楽天イーグルス・UNISON SQUARE GARDEN
+生年月日: 1999年6月8日(23歳) / 福島県会津若松市出身 / 岩手県滝沢市在中
 職歴、技術セット、大学院での研究などは、下の方に記載しています。
 Experiences 💼 現在活動中のことについて ↓
 2020〜現在 滝沢ロボティクス合同会社
 設立メンバー(役員)、現在3年目 サイト制作 岩手県立大学Webオープンキャンパスサイト 去年、大手企業が制作したサイトよりも、アクセス数を1.5倍に伸ばすことができました。 店舗サイトなど 屋外搬送用ロボットの開発 TakiRoboG1 「屋外搬送に革命を」をモットーに、オープンソフトウェア「ArduPilot」を用いて開発しました。他社ではロボットを多機能にして全てを解決しようとしていますが、弊社のロボットは機能をシンプルにし、人と協業できるような安価な屋外搬送用ロボットを開発しました。 岩手産木材(広葉樹)を使用したパームレスト 滝沢市のふるさと納税 返礼品となっています。 動画・映像制作 プロダクト動画、イベントダイジェスト動画、YouTube動画 ロボット教室 「robodemy盛岡」という小中学生向けロボット教室の運営を行なっています。 2019〜現在 ファブテラスいわて(ファブラボ運営)
-理事、現在4年目 3Dプリンタ / レーザー加工機 / 刺繍ミシン / Fusion360 / Adobe Illustrator の使い方を、利用者の方に教え、自由に使ってもらう施設を運営しています。 デジタルものづくりの楽しさを伝えています Skills 🧑‍💻 触れたことのある技術 Swift / Ruby(on Rails) / HTML / CSS / Javascript(フロントエンド) / jQuery / C / java / Python / MATLAB / WordPress / Flutter(全力勉強中) その他 動画・映像編集歴8年(Adobe Premire Pro) 広報・SNS運用スキル(少しばかりのSNSマーケティング知識があります) チラシ・バナー作成(Adobe PhotosShop / Adobe Illustrator) UI設計(AdobeXD) Education 🎓 同じ悩みを抱える精神疾患者(学生)同士を繋げるマッチングアプリの開発と研究をしています。</description>
+理事、現在4年目 3Dプリンタ / レーザー加工機 / 刺繍ミシン / Fusion360 / Adobe Illustrator の使い方を、利用者の方に教え、自由に使ってもらう施設を運営しています。 デジタルものづくりの楽しさを伝えています Skills 🧑‍💻 現在力を入れている言語
+Dart / flutter 触れたことのある技術
+Swift / Ruby(on Rails) / HTML / CSS / Javascript(フロントエンド) / jQuery / C / java / Python / MATLAB / WordPress その他</description>
     </item>
     
   </channel>
