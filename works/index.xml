@@ -16,7 +16,8 @@
       <pubDate>Wed, 18 Jan 2023 08:30:00 +0900</pubDate>
       
       <guid>https://masamune-68.github.io/profile/works/freeze/</guid>
-      <description>アプリの概要 iOS: https://apps.apple.com/jp/app/id1665422821 (macOSでも使えます)
+      <description>アプリの概要 iOS: https://apps.apple.com/jp/app/id1665422821
+(macOSでも使えます)
 Android: 現在審査中
 GitHub: https://github.com/MasaMune-68/freezing_index_flutter
 Geolocatorで、現在地の緯度・経度を取得。 その後、取得した位置情報を用いてOpenWeatherMap APIから現在地の天気情報を取得。 取得した天気情報から、水道管凍結指数を計算し、アプリ上で表示。 毎晩22時に確認通知を送ることができ、今夜の水抜きが必要か確認することができるため、水抜きのし忘れ防止につながります。 ※ 郵便番号からも検索することができるため、位置情報をオフにしていてもアプリが機能します。
