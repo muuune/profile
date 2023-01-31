@@ -16,8 +16,8 @@
       <pubDate>Wed, 18 Jan 2023 08:30:00 +0900</pubDate>
       
       <guid>https://masamune-68.github.io/profile/works/freeze/</guid>
-      <description>アプリの概要 iOS(macOS): https://apps.apple.com/jp/app/id1665422821
-Android: 現在審査中
+      <description>アプリの概要 iOS(macOS): http://is.gd/HKmjbF
+Android: https://is.gd/vwaMQg
 GitHub: https://github.com/MasaMune-68/freezing_index_flutter
 Geolocatorで、現在地の緯度・経度を取得。 その後、取得した位置情報を用いてOpenWeatherMap APIから現在地の天気情報を取得。 取得した天気情報から、水道管凍結指数を計算し、アプリ上で表示。 毎晩22時に確認通知を送ることができ、今夜の水抜きが必要か確認することができるため、水抜きのし忘れ防止につながります。 ※ 郵便番号からも検索することができるため、位置情報をオフにしていてもアプリが機能します。
 動作イメージ 開発言語・使用したAPI/パッケージ language: Dart / Flutter API: OpenWeatherMap API package geolocator : ^9.0.2 geocoding: ^2.0.5 flutter_local_notifications: ^13.0.0 timezone: ^0.9.1 flutter_native_timezone: ^2.0.0 shared_preferences: ^2.0.15 tutorial_coach_mark: ^1.2.4 http: ^0.13.5 flutter_riverpod: ^2.1.3 flutter_launcher_icons: ^0.11.0 flutter_native_splash: ^2.2.16 url_launcher: ^6.1.7 開発に至った経緯 寒冷地では、寒さによって水道管が凍ってしまうことから、毎晩の水抜きは当たり前のように行われています🚰 私が住んでいる岩手県滝沢市も寒冷地であり、水抜きを日常的にしています。 しかし、初めて寒冷地に引っ越してきた大学生にとって「水抜き」とは全く未知のこと。 どのくらいの温度だったら水抜きをすれば良いのか、いつ水抜きをしたら良いのか。など、全てが初めてでよく分かりません。 既存の天気アプリでは、水道管凍結指数が表示されているアプリもごく一部存在するが、極めて表示が小さく、そもそも毎晩、凍結指数を確認するようにお知らせをしてくれるアプリはありません！ そこで、現在地の天気情報から水道管凍結指数を計算し、毎晩22時に確認通知をしてくれるアプリケーションを開発してみました！ 開発する上で苦労した点 毎晩22時にバックグラウンドで確認通知を送るように実装した点。 チュートリアル画面を初回起動のみ表示するように実装した点。 バックグラウンド時に位置情報を取得できるパッケージと、できないパッケージがあり、実装をする上で苦労した。 位置情報を扱うアプリのため、審査が厳しかった。→ 位置情報をオフにしても機能するアプリに修正し、審査が通りました。 iOSとAndroidでOSが違うため、iOSでは挙動が上手くいっていても、Androidでは上手くいかない時があり、苦労した。 もともとは毎晩22時に水道管凍結指数を通知してくれるアプリにしようと考えていたが、バックグラウンドでの定期実行が難しく、まずは定期実行なしのアプリでリリースした。 今後、実装・改善していきたいこと 毎晩22時に水道管凍結指数を通知してくれるアプリにしたいため、FirebaseのCloud Functuionsを使用して、Firestoreに登録されたユーザーの位置情報を、22時に定期処理し、Cloud Messagingを用いてユーザーに凍結指数を通知できるようにしたい。 現在、通知時間を22時と限定しているが、ゆくゆくはユーザーの好きな時間を設定できるようにし、通知できるようにしたい。 最後に 初めてFlutterを使用したアプリをリリースしてみて、思ったことを挙げていきます。</description>
